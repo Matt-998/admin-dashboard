@@ -79,6 +79,10 @@ header {
   font-weight: bold;
 }
 
+.hero h2 {
+  color: black;
+}
+
 .header-buttons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -217,11 +221,12 @@ main h2 {
   align-items: center;
 }
 
-img {
+header img,
+.trending img {
   border-radius: 50%;
 }
 
-.trending a {
+a {
   color: #000;
   text-decoration: none;
 }
@@ -231,6 +236,14 @@ h3.name {
   align-items: center;
   position: relative;
   font-size: 18px;
+}
+
+a.name {
+  position: relative;
+}
+
+h2 .name::after {
+  bottom: -5px;
 }
 
 .name::after {

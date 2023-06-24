@@ -22,6 +22,16 @@ header {
   z-index: 1;
 }
 
+.header-buttons button {
+  color: #fff;
+  background-color: #53a3ff;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px 28px;
+  border-radius: 50px;
+  border: none;
+}
+
 nav {
   grid-area: 1 / 1 / 3 / 2;
   background-color: #53a3ff;
@@ -145,6 +155,42 @@ main h2 {
 
 .trending img {
   border-radius: 50%;
+}
+
+.trending a {
+  color: #000;
+  text-decoration: none;
+}
+
+h3.name {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+}
+
+.name::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  background-color: #eeaa19;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.name:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.github-icon {
+  width: 25px;
+  margin-left: 10px;
+  margin-bottom: 3px;
 }
 
 .announcements .aside-wrapper > :nth-child(2) {

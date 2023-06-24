@@ -17,9 +17,73 @@ body {
 header {
   grid-area: 1 / 2 / 2 / 3;
   background-color: #fff;
-  padding: 20px;
+  padding: 20px 30px 20px 20px;
   box-shadow: 1.8px 4px 6px 0px #aaaaaacc;
   z-index: 1;
+  display: grid;
+  grid-template: 1fr 2fr / 1fr;
+}
+
+.sub-header-container-2 {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 100px;
+}
+
+.search-bar {
+  display: grid;
+  grid-template: 30px / 30px 1fr;
+  align-content: center;
+}
+
+.search {
+  border: none;
+  border-radius: 30px;
+  background-color: #e0e0e0;
+  flex: 1;
+  margin-left: 15px;
+  padding: 15px;
+  font-size: 16px;
+}
+.search:focus {
+  border: 2px solid #eeaa19;
+  outline: none;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.24);
+}
+
+.profile-wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.profile {
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.sub-header-container {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero p {
+  font-weight: bold;
+}
+
+.header-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 30px;
 }
 
 .header-buttons button {
@@ -153,7 +217,7 @@ main h2 {
   align-items: center;
 }
 
-.trending img {
+img {
   border-radius: 50%;
 }
 
